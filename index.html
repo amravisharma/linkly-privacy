@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linkly – Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.7;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .card {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 8px 24px rgba(0,0,0,.05);
+      padding: 2.5rem 2.5rem 3rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: #2563eb;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-icon svg { display: block; }
+
+    .logo-text {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #2563eb;
+      letter-spacing: -.3px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: .4rem;
+      color: #0f172a;
+    }
+
+    .meta {
+      font-size: .85rem;
+      color: #64748b;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 2rem 0 .5rem;
+    }
+
+    p { margin-bottom: .75rem; color: #374151; }
+
+    ul {
+      margin: .4rem 0 .75rem 1.2rem;
+      color: #374151;
+    }
+
+    ul li { margin-bottom: .35rem; }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .highlight {
+      background: #eff6ff;
+      border-left: 3px solid #2563eb;
+      border-radius: 0 8px 8px 0;
+      padding: .75rem 1rem;
+      margin: 1.25rem 0;
+      font-size: .95rem;
+      color: #1e40af;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e2e8f0;
+      margin: 2rem 0;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: .82rem;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="logo">
+      <div class="logo-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="logo-text">Linkly</span>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: 20 April 2025 &nbsp;·&nbsp; Last updated: 20 April 2025</p>
+
+    <div class="highlight">
+      Linkly is a personal link-saving app. Your links live on your device. No account is required, no data is sold, and no analytics are collected.
+    </div>
+
+    <h2>1. What data Linkly stores</h2>
+    <p>All data you enter is stored locally on your device in a private SQLite database:</p>
+    <ul>
+      <li>URLs, titles, descriptions, and thumbnail images you save</li>
+      <li>Categories and tags you create</li>
+      <li>Reminder dates and times you set</li>
+    </ul>
+    <p>This data never leaves your device unless you choose to back it up to your own Google Drive (see section 3).</p>
+
+    <h2>2. Data Linkly fetches automatically</h2>
+    <p>When you save a link, Linkly may make two outbound requests to improve your experience:</p>
+    <ul>
+      <li><strong>Open Graph metadata</strong> — Linkly fetches the page you are saving to read its title, description, and preview image. This is a standard HTTP request identical to a browser visiting the page.</li>
+      <li><strong>Site favicon</strong> — Linkly loads a small icon for the domain via Google's public favicon service (<code>https://www.google.com/s2/favicons</code>). Google's own privacy policy applies to this request.</li>
+    </ul>
+    <p>No personal information is sent in these requests beyond the URL itself.</p>
+
+    <h2>3. Optional Google Drive backup</h2>
+    <p>You may connect your Google account to back up and restore your links. If you do:</p>
+    <ul>
+      <li>Linkly requests access only to its own private app-data folder in Google Drive (<code>drive.appdata</code> scope). This folder is invisible to you and to other apps — it cannot be browsed in Google Drive.</li>
+      <li>Your links are written as a single JSON file in that private folder. Nothing else is read from or written to your Google Drive.</li>
+      <li>Google Sign-In is handled entirely by Google Play Services on your device. Linkly never sees your Google password.</li>
+      <li>You can disconnect Google Drive at any time from within the app, or revoke access via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    </ul>
+
+    <h2>4. Reminders and notifications</h2>
+    <p>Reminders are scheduled locally using Android's AlarmManager. No reminder data is transmitted to any server. Notifications are displayed entirely on your device.</p>
+
+    <h2>5. Data Linkly does NOT collect</h2>
+    <ul>
+      <li>No account registration or sign-up is required to use the app</li>
+      <li>No analytics or crash-reporting SDKs are included</li>
+      <li>No advertising networks or third-party trackers</li>
+      <li>No location, contacts, camera, microphone, or any sensor data</li>
+    </ul>
+
+    <h2>6. Data retention and deletion</h2>
+    <p>All your data is stored on your device. You can delete individual links at any time within the app. Uninstalling the app removes all locally stored data. If you have a Google Drive backup, delete it by revoking access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a> or by manually deleting the backup file from your Drive app-data folder.</p>
+
+    <h2>7. Children's privacy</h2>
+    <p>Linkly is not directed at children under 13 and does not knowingly collect any information from children.</p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>If this policy changes materially, the updated version will be posted at this URL with a revised effective date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions about this policy? Reach out at <a href="mailto:ravi85.nz@gmail.com">ravi85.nz@gmail.com</a>.</p>
+
+    <hr class="divider" />
+
+    <footer>Linkly &copy; 2025 &nbsp;·&nbsp; All rights reserved</footer>
+
+  </div>
+</body>
+</html>
